@@ -1,0 +1,31 @@
+#model img {
+    position: absolute;
+}
+
+#base {
+    z-index: 1;
+}
+
+#top{
+    z-index: 3;
+    top: 60px;
+}
+
+#bottoms{
+    z-index: 2
+}
+
+#fronthair {
+    z-index: 7;
+}
+
+#options{
+    position: relative;
+    left: 200px;
+}
+
+#newoptions {
+    position: relative;
+    left: 200px;
+
+}

@@ -1,3 +1,8 @@
+:root{
+    --background-options: red;
+    --option-border: blue;
+}
+
 #model img {
     position: absolute;
 }
@@ -19,13 +24,45 @@
     z-index: 7;
 }
 
-#options{
-    position: relative;
-    left: 200px;
-}
-
 #newoptions {
     position: relative;
-    left: 200px;
+    left: 150px;
+    max-height: 240px;
+    max-width: 320px;
+    overflow: scroll;
+    z-index: 10;
+    border: solid var(--option-border) 2px;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    padding: 5px;
+    scrollbar-width: none;
+    background-color: var(--background-options);
+}
+
+
+.meow {
+    display: block;
+    grid-template-columns: 110px 110px 110px;
+    gap: 10px;
+    background-color: var(--background-options);
+    width: 355px;
+    height: 260px;
+}
+
+
+
+.tablink {
+    z-index: 11;
+    position: relative;
+    left: 140px;
+    margin-bottom: -3px;
+    background-color: var(--background-options);
+    font-size: 18px;
+    margin-left: 10px;
+    border: solid 2px var(--option-border);
+    border-bottom: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 
 }
+

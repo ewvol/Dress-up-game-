@@ -16,12 +16,27 @@
         <img id="base" src="baseChara.png">
         <img id="backhair" src="backbraids.png">
     </div>
-
+    <div id="choices">
+    <div id="nav">
+    <button class="tablink" onclick="changecategory(event,'shirttab')"> Shirts</button>
+    <button class="tablink" onclick="changecategory(event,'pantstab')"> Pants </button>
+    </div>
     <div id="newoptions">
-        <div id="shirttab">
+        <div id="shirttab" class="meow">
             <img src="starShirt.png" onclick="wearshirt(1)">
             <img src="https://placehold.co/100x100/orange/black" onclick="wearshirt(3)">
+            <img src="https://placehold.co/100x100/magenta/white" onclick="wearshirt(3)">
+            <img src="https://placehold.co/100x100/orange/black" onclick="wearshirt(3)">
+            <img src="https://placehold.co/100x100/orange/black" onclick="wearshirt(3)">
         </div>
+        <div id="pantstab" class="meow">
+            <img src="https://placehold.co/100x100/pink/black" onclick="wearshirt(1)">
+            <img src="https://placehold.co/100x100/pink/black" onclick="wearshirt(3)">
+            <img src="https://placehold.co/100x100/magenta/white" onclick="wearshirt(3)">
+            <img src="https://placehold.co/100x100/pink/black" onclick="wearshirt(3)">
+            <img src="https://placehold.co/100x100/pink/black" onclick="wearshirt(3)">
+        </div>
+    </div>
     </div>
     <script src="game.js"> </script>
 </body>

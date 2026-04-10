@@ -7,11 +7,11 @@ const outfit = {
     accessories: "none.png"
 }
 const shirts = ["none.png", "starShirt.png", "longsleeve.png", "https://placehold.co/100x100/orange/black"];
+const bottoms = ["none.png","longSkirt.png"];
 let topitem = document.getElementById("top");
+let bottomitem= document.getElementById("bottoms")
 let fronthairitem = document.getElementById("fronthair")
 let backhairitem = document.getElementById("backhair")
-
-
 
 function wearshirt(item) {
     if (shirts[0]==outfit.top){
@@ -26,3 +26,15 @@ function wearshirt(item) {
     topitem.src = outfit.top;
     console.log(outfit);
 }
+
+function changecategory(event,topic){
+    let options = document.getElementById("newoptions")
+    let tabs= document.getElementsByClassName("meow")
+    topic= document.getElementById(topic)
+    for (let tab of tabs) {
+        tab.style.display = "none";
+    }
+    
+    topic.style.display = "block"
+}
+

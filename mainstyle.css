@@ -1,7 +1,8 @@
 :root{
-    --background-options: red;
-    --option-border: blue;
-    --backround-main: white;
+    --background-options: #E9B3FB;
+    --option-border: #6F00FF;
+    --backround-main: hwb(0 95% 0%);
+    --text-color-main: #3B0270;
 }
 
 body {
@@ -19,10 +20,13 @@ body {
 #top{
     z-index: 3;
     top: 60px;
+    left: 9px;
 }
 
 #bottoms{
-    z-index: 2
+    z-index: 2;
+    top:120px;
+    left:9px;
 }
 
 #fronthair {
@@ -32,7 +36,7 @@ body {
 #newoptions {
     position: relative;
     left: 150px;
-    max-height: 240px;
+    max-height: 210px;
     max-width: 320px;
     overflow: scroll;
     z-index: 10;
@@ -44,6 +48,9 @@ body {
     background-color: var(--background-options);
 }
 
+#newoptions img {
+    max-height: 100px;
+}
 
 .meow {
     display: block;
@@ -62,12 +69,17 @@ body {
     left: 140px;
     margin-bottom: -3px;
     background-color: var(--background-options);
-    font-size: 18px;
     margin-left: 10px;
     border: solid 2px var(--option-border);
     border-bottom: none;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-
+    font-family: papernotes;
+    font-size: 24px;
+    color: var(--text-color-main)
 }
 
+@font-face {
+    font-family: 'papernotes';
+    src: url(Papernotes.ttf);
+}

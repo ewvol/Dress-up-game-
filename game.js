@@ -6,8 +6,8 @@ const outfit = {
     shoes: "none.png",
     accessories: "none.png"
 }
-const shirts = ["none.png", "starShirt.png", "longsleeve.png", "https://placehold.co/100x100/orange/black"];
-const bottoms = ["none.png","longSkirt.png"];
+const shirts = ["none.png", "starShirt.png", "frillyBlouse.png","whiteBlouse.png" ,"https://placehold.co/100x100/orange/black"];
+const bottoms = ["none.png","longSkirt.png", "blackWhiteSkirt"];
 let topitem = document.getElementById("top");
 let bottomitem= document.getElementById("bottoms")
 let fronthairitem = document.getElementById("fronthair")
@@ -27,6 +27,15 @@ function wearshirt(item) {
     console.log(outfit);
 }
 
+function wearpant(item){
+    if (bottoms[0]==outfit.bottom){
+        outfit.bottom= bottoms[item];
+    }
+    else if (bottoms[item]==outfit.bottom){
+        
+    }
+}
+
 function changecategory(event,topic){
     let options = document.getElementById("newoptions")
     let tabs= document.getElementsByClassName("meow")
@@ -37,4 +46,5 @@ function changecategory(event,topic){
     
     topic.style.display = "block"
 }
+
 

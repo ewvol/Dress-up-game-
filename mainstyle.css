@@ -1,6 +1,11 @@
 :root{
     --background-options: red;
     --option-border: blue;
+    --backround-main: white;
+}
+
+body {
+    background-color: var(--backround-main);
 }
 
 #model img {

@@ -50,6 +50,14 @@ function wearpant(item){
     saveData()
 }
 
+function clearOutfit(){
+    outfit.top = shirts[0];
+    outfit.bottom =  bottoms[0];
+    
+    topitem.src= outfit.top;
+    bottomitem.src = outfit.bottom;
+    console.log(outfit);
+}
 function changecategory(event,topic){
     let options = document.getElementById("newoptions")
     let tabs= document.getElementsByClassName("meow")
@@ -60,7 +68,6 @@ function changecategory(event,topic){
     
     topic.style.display = "block"
 }
-
 
 function loadData(){
     let saved = localStorage.getItem("outfit");

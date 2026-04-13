@@ -4,7 +4,8 @@ let outfit = {
     top: "none.png", 
     bottom: "none.png",
     shoes: "none.png",
-    accessories: "none.png"
+    accessories: "none.png",
+    tucked: false
 }
 const shirts = ["none.png", "starShirt.png", "frillyBlouse.png","whiteBlouse.png"];
 const bottoms = ["none.png","longSkirt.png", "blackWhiteSkirt.png"];
@@ -79,6 +80,30 @@ function loadData(){
     bottomitem.src = outfit.bottom;
     fronthairitem.src = outfit.fronthair;
     backhairitem.src = outfit.backhair;
+
+    if (outfit.tucked){
+    topitem.style.zIndex = "2"
+    bottomitem.style.zIndex = "3"
+    }
+}
+
+function tuckIn(){
+    let button = document.getElementById("tuck");
+    
+    if (!outfit.tucked){
+    outfit.tucked=true
+    topitem.style.zIndex = "2"
+    bottomitem.style.zIndex = "3"
+      button.innerText = "Tuck Out"
+    console.log("tucked in!")
+    }
+    else{
+    outfit.tucked=false
+    topitem.style.zIndex = "3"
+    bottomitem.style.zIndex = "2"
+    button.innerText = "Tuck In"
+    console.log("tucked out!")
+    }
 }
 
 loadData()

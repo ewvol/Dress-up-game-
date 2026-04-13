@@ -1,15 +1,15 @@
 let outfit = {
-    fronthair: "frontbraids.png",
-    backhair: "backbraids.png",
-    top: "none.png", 
-    bottom: "none.png",
-    shoes: "none.png",
-    accessories: "none.png",
+    fronthair: "Assets/frontbraids.png",
+    backhair: "Assets/backbraids.png",
+    top: "Assets/none.png", 
+    bottom: "Assets/none.png",
+    shoes: "Assets/none.png",
+    accessories: "Assets/none.png",
     tucked: false
 }
-const shirts = ["none.png", "starShirt.png", "frillyBlouse.png","whiteBlouse.png"];
-const bottoms = ["none.png","longSkirt.png", "blackWhiteSkirt.png"];
-const accessories = ["none.png"]
+const shirts = ["Assets/none.png", "Assets/starShirt.png", "Assets/frillyBlouse.png","Assets/whiteBlouse.png"];
+const bottoms = ["Assets/none.png","Assets/longSkirt.png", "Assets/blackWhiteSkirt.png"];
+const accessories = ["Assets/none.png"]
 
 let topitem = document.getElementById("top");
 let bottomitem= document.getElementById("bottoms")
@@ -59,6 +59,7 @@ function clearOutfit(){
     bottomitem.src = outfit.bottom;
     console.log(outfit);
 }
+
 function changecategory(event,topic){
     let options = document.getElementById("newoptions")
     let tabs= document.getElementsByClassName("meow")
@@ -78,8 +79,6 @@ function loadData(){
     console.log(saved);
     topitem.src = outfit.top;
     bottomitem.src = outfit.bottom;
-    fronthairitem.src = outfit.fronthair;
-    backhairitem.src = outfit.backhair;
 
     if (outfit.tucked){
     topitem.style.zIndex = "2"
@@ -89,7 +88,7 @@ function loadData(){
 
 function tuckIn(){
     let button = document.getElementById("tuck");
-    
+
     if (!outfit.tucked){
     outfit.tucked=true
     topitem.style.zIndex = "2"
@@ -104,6 +103,8 @@ function tuckIn(){
     button.innerText = "Tuck In"
     console.log("tucked out!")
     }
+
+    saveData()
 }
 
 loadData()

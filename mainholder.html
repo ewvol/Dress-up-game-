@@ -5,34 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dress Up Game!</title>
     <link rel="stylesheet" href="mainstyle.css">
-    <!--- To add: Radio in Main page, Random button?, Add Backgrounds, Tuck In Shirts-->
+    <!--- To add: Radio in Main page, Random button?, Add Backgrounds, -->
 </head>
 <body>
     <div id="model">
         <img id="accessories">
-        <img id="fronthair" src="frontbraids.png">
+        <img id="fronthair" src="Assets/frontbraids.png">
         <img id="top">
         <img id="bottoms">
         <img id="shoes">
-        <img id="base" src="baseChara.png">
-        <img id="backhair" src="backbraids.png">
+        <img id="base" src="Assets/baseChara.png">
+        <img id="backhair" src="Assets/backbraids.png">
     </div>
     <div id="choices">
     <div id="nav">
-    <button class="tablink" onclick="changecategory(event,'shirttab')"> Shirts</button>
-    <button class="tablink" onclick="changecategory(event,'pantstab')"> Pants </button>
+        <button class="tablink" onclick="changecategory(event,'shirttab')"> Shirts</button>
+        <button class="tablink" onclick="changecategory(event,'pantstab')"> Pants </button>
         <button class="tablink" onclick="tuckIn()" id="tuck"> Tuck In</button>
-    <button class="tablink" onclick="clearOutfit()"> Clear All</button>
+        <button class="tablink" onclick="clearOutfit()"> Clear All </button>
     </div>
     <div id="newoptions">
         <div id="shirttab" class="meow">
-            <img src="starShirt.png" onclick="wearshirt(1)">
-            <img src="frillyBlouse.png" onclick="wearshirt(2)">
-            <img src="whiteBlouse.png" onclick="wearshirt(3)">
+            <img src="Assets/starShirt.png" onclick="wearshirt(1)">
+            <img src="Assets/frillyBlouse.png" onclick="wearshirt(2)">
+            <img src="Assets/whiteBlouse.png" onclick="wearshirt(3)">
         </div>
         <div id="pantstab" class="meow">
-            <img src="blackWhiteSkirt.png" onclick="wearpant(2)">
-            <img src="longSkirt.png" onclick="wearpant(1)">
+            <img src="Assets/blackWhiteSkirt.png" onclick="wearpant(2)">
+            <img src="Assets/longSkirt.png" onclick="wearpant(1)">
         </div>
     </div>
     </div>
